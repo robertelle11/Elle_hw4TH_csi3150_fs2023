@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(130, 186, 245);
+}
+
+#showCars {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  margin: auto;
+  background-color: rgb(60, 155, 255);
+}
+
+img {
+  width: 400px;
+  height: 250px;
+}
+
+.card {
+  border: 1px solid black;
+  width: 300px;
+}
+
+.card h2 {
+  margin: 5;
+}
+
+#labels {
+  font-size: larger;
+  font-weight: bolder;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 2px;
+}
+
+.filter-button {
+  margin: 5px;
+}

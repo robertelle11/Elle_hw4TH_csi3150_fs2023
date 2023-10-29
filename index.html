@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF -8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robert Elle - TH4</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Used Car Inventory</h1>
+
+    <div id="labels">
+      <label>Make</label>
+      <label>Min year</label>
+      <label>Max Year</label>
+      <label>Max Price</label>
+      <label>Mileage</label>
+      <label>Color</label>
+    </div>
+    <hr />
+
+    <form id="filter-form">
+      <input type="text" id="makeInput" placeholder="Enter make or model" />
+      <!--min + max year-->
+      <input type="number" id="minYear" placeholder="Enter Min year" />
+      <input type="number" id="maxYear" placeholder="Enter Max year" />
+      <!---price-->
+      <!--<label>Price</label> -->
+      <input type="range" id="maxPrice" min="10000" max="75000" />
+      <span id="priceValue">1000</span>
+      <!---mileage-->
+      <!--<label>mileage</label> -->
+      <input type="range" id="miles" min="10000" max="60000" />
+      <span id="milesValue">10000</span>
+      <!----color-->
+      <form id="filter-form">
+        <label>
+          <input
+            name="color"
+            type="checkbox"
+            id="White"
+            class="filter-checkbox"
+            value="White"
+          />
+          White
+        </label>
+        <label>
+          <input
+            name="color"
+            type="checkbox"
+            id="Black"
+            class="filter-checkbox"
+            value="Black"
+          />
+          Black
+        </label>
+        <label>
+          <input
+            name="color"
+            type="checkbox"
+            id="Silver"
+            class="filter-checkbox"
+            value="Silver"
+          />
+          Silver
+        </label>
+        <label>
+          <input
+            name="color"
+            type="checkbox"
+            id="Blue"
+            class="filter-checkbox"
+            value="Blue"
+          />
+          Blue
+          <label>
+            <input
+              name="color"
+              type="checkbox"
+              id="Red"
+              class="filter-checkbox"
+              value="Red"
+            />
+            Red
+          </label>
+        </label>
+      </form>
+    </form>
+  </hr>
+
+    <div id="showCars">
+      <!---info-->
+    </div>
+    <script src="./usedCars.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
